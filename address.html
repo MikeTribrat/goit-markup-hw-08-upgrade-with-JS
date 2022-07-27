@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Icecream</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <script src="https://kit.fontawesome.com/0a932e0de2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+<link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+<div class="modal" data-modal="modal-address">
+  <div class="modal__wrapper">
+    <button class="modal__button-close" data-action="modal-close-address">
+      <i class="far fa-times-circle"></i>
+    </button>
+
+    <div class="modal__decoration modal__decoration_left"></div>
+    <div class="modal__decoration modal__decoration_right"></div>
+    <div class="modal__decoration-circle"></div>
+
+    <h3 class="modal__title">Find us in your city!</h3>
+
+    <iframe
+      data-element="google-maps-contacts"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8402.658128635934!2d-87.80330376358984!3d41.875901624672636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL%2C%20USA!5e0!3m2!1sen!2sua!4v1642296188540!5m2!1sen!2sua"
+      style="border-radius: 5px; border: 0; width: 100%; height: 400px"
+      allowfullscreen=""
+      loading="lazy"
+    ></iframe>
+
+    <ul class="maps-changer">
+      <li class="maps-changer__item">
+        <button class="maps-changer__button active" data-action="change-city" data-city="CH">
+          Chicago
+        </button>
+      </li>
+      <li class="maps-changer__item">
+        <button class="maps-changer__button" data-action="change-city" data-city="LA">
+          Los Angeles
+        </button>
+      </li>
+      <li class="maps-changer__item">
+        <button class="maps-changer__button" data-action="change-city" data-city="NY">
+          New York
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+<script src="./js/changeMap.js"></script>
+</body>
+</html>
